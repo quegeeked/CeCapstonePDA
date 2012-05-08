@@ -6,12 +6,18 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.MyLocationOverlay;
 
 import android.app.Activity;
+import android.content.Context;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 
 public class CeCapstonePDAActivity extends MapActivity {
     private MapView Mapview;
     private MyLocationOverlay mypos;
     private MapController controller;
+    private String LogCatTag = "Que's";
+    private MyLocationListener mlocListener;
 
     /** Called when the activity is first created. */
     @Override
@@ -20,6 +26,17 @@ public class CeCapstonePDAActivity extends MapActivity {
         setContentView(R.layout.main);
         InitializeMap();
         InitializeMyLocation();
+        IntializeLocationManager();
+        Log. i(LogCatTag , "In onCreate" );
+        
+        
+    }
+
+    private void IntializeLocationManager() {
+        LocationManager mlocManager = 
+                (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        LocationListener mlocListener = new MyLocationListener(this, controller);
+        mlocManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mlocListener);
         
         
     }
