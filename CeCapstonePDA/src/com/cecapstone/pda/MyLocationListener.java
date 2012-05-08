@@ -1,41 +1,49 @@
 package com.cecapstone.pda;
 
+import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MyLocationListener implements LocationListener {
     private Context mcontext;
+    private MapController mcontrol;
 
     public MyLocationListener(Context context, MapController controller){
+        mcontext = context;
+        mcontrol = controller;
         
         
     }
 
-    public void onLocationChanged(Location arg0)
+    public void onLocationChanged(Location loc)
     {
-        // TODO Auto-generated method stub
+        double lat = loc.getLatitude();
+        double lon = loc.getLongitude();
+        GeoPoint p = new GeoPoint(
+                (int) (lat * 1E6),
+                (int) (lon * 1E6));
+        mcontrol.animateTo(p);
+        
         
     }
 
-    public void onProviderDisabled(String arg0)
-    {
-        // TODO Auto-generated method stub
+    public void onProviderDisabled(String provider){
+        Toast.makeText(mcontext, "GPS Disabled", Toast.LENGTH_SHORT).show();
         
     }
 
-    public void onProviderEnabled(String arg0)
-    {
-        // TODO Auto-generated method stub
+    public void onProviderEnabled(String provider){
+        Toast.makeText(mcontext, "GPS Enabled", Toast.LENGTH_SHORT).show();
         
     }
 
-    public void onStatusChanged(String arg0, int arg1, Bundle arg2)
-    {
-        // TODO Auto-generated method stub
+    public void onStatusChanged(String provider, int status, Bundle extra){
+
         
     }
 
