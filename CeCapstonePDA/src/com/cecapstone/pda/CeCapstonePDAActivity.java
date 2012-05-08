@@ -31,7 +31,31 @@ public class CeCapstonePDAActivity extends MapActivity {
         
         
     }
-
+    
+    public void onStart(){
+        super.onStart();
+    }
+    
+    public void onRestart(){
+        super.onRestart();
+    }
+    
+    public void onResume(){
+        super.onResume();
+    }
+    
+    protected void onPause(){
+        super.onPause();
+    }
+    
+    protected void onStop(){
+        super.onStop();
+    }
+    
+    protected void onDestroy(){
+        super.onDestroy();
+    }
+    
     private void IntializeLocationManager() {
         LocationManager mlocManager = 
                 (LocationManager) getSystemService(Context.LOCATION_SERVICE);
