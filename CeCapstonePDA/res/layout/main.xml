@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:apiKey="0khk0qKSG4V6BwZpLgbgeXh8pKKP073H_YleCBQ"
-    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
-    <Button
-        android:id="@+id/button2"
+
+    <Button
+        android:id="@+id/Depth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depth" />
+  
+    <Button
+        android:id="@+id/Camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="MapView" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="Depth Checker" />
-        
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:text="Camera" />
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:apiKey="0khk0qKSG4V6BwZpLgbgeXh8pKKP073H_YleCBQ"
+        android:clickable="true" >
+    </com.google.android.maps.MapView>
 
 </LinearLayout>

@@ -11,6 +11,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
 public class CeCapstonePDAActivity extends MapActivity {
     private MapView Mapview;
@@ -29,6 +30,9 @@ public class CeCapstonePDAActivity extends MapActivity {
         InitializeMyLocation();
         IntializeLocationManager();
         Log.i(LogCatTag, "In onCreate");
+        Button Camera = (Button) findViewById(R.id.Camera);
+        Button Depth = (Button) findViewById(R.id.Depth);
+        Button MapView = (Button) findViewById(R.id.mapview);
 
     }
 
