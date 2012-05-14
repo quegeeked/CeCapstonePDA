@@ -19,6 +19,10 @@ public class CeCapstonePDAActivity extends MapActivity {
     private MapController controller;
     private String LogCatTag = "Que's";
     private MyLocationListener mlocListener;
+    private Button camera;
+    private Button depth;
+    private Button mapView2;
+    private dualjoystickview dualjoystickview; 
 
     /** Called when the activity is first created. */
     @Override
@@ -30,9 +34,9 @@ public class CeCapstonePDAActivity extends MapActivity {
         InitializeMyLocation();
         IntializeLocationManager();
         Log.i(LogCatTag, "In onCreate");
-        Button Camera = (Button) findViewById(R.id.Camera);
-        Button Depth = (Button) findViewById(R.id.Depth);
-        Button MapView = (Button) findViewById(R.id.mapview);
+        camera = (Button) findViewById(R.id.Camera);
+        depth = (Button) findViewById(R.id.Depth);
+       // mapView2 = (Button) findViewById(R.id.mapview);
 
     }
 
