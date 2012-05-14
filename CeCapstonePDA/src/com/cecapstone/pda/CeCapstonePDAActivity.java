@@ -22,7 +22,7 @@ public class CeCapstonePDAActivity extends MapActivity {
     private Button camera;
     private Button depth;
     private Button mapView2;
-    private dualjoystickview dualjoystickview; 
+    private DualJoystickView DualJoystickView; 
 
     /** Called when the activity is first created. */
     @Override
