@@ -37,6 +37,7 @@ public class CeCapstonePDAActivity extends MapActivity {
         Log.i(LogCatTag, "In onCreate");
         camera = (Button) findViewById(R.id.Camera);
         depth = (Button) findViewById(R.id.Depth);
+        JoystickView = (View) findViewById(R.attr.this);
      
        // mapView2 = (Button) findViewById(R.id.mapview);
 
