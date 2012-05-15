@@ -23,8 +23,7 @@ public class CeCapstonePDAActivity extends MapActivity {
     private Button camera;
     private Button depth;
     private Button mapView2;
-    private JoystickView JoystickView;
-
+    JoystickView mJoystickView;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -37,10 +36,20 @@ public class CeCapstonePDAActivity extends MapActivity {
         Log.i(LogCatTag, "In onCreate");
         camera = (Button) findViewById(R.id.Camera);
         depth = (Button) findViewById(R.id.Depth);
-        JoystickView = (View) findViewById(R.attr.this);
+        mJoystickView = new JoystickView(this);
+        setContentView(mJoystickView);
+        
      
        // mapView2 = (Button) findViewById(R.id.mapview);
 
+    }
+
+    private void setContentView(JoystickView mJoystickView2)
+    {
+        // TODO Auto-generated method stub
+        
+        
+        
     }
 
     public void onStart()

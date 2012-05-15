@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, CeCapstonePDAActivity!</string>
     <string name="Camera">Camera</string><string name="app_name">CeCapstonePDA</string>
     
     <string name="Depth">Depth</string>
     <string name="MapView">MapView</string>
-    <string name="dualjoystickview">joystick</string>
 
 </resources>

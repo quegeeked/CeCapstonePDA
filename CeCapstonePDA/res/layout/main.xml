@@ -22,7 +22,7 @@
             android:background="#4A7023"
             android:text="@string/Depth"
             android:textStyle="italic" />
-	    
+	
 	    
 	    
     <com.google.android.maps.MapView
