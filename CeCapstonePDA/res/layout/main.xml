@@ -30,15 +30,15 @@
 
         
         
-        <com.MobileAnarchy.Android.Widgets.Joystick.DualJoystickView
+ <com.MobileAnarchy.Android.Widgets.Joystick.DualJoystickView
                 android:id="@+id/dualjoystickView" android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dip" android:layout_width="fill_parent"
                 android:layout_height="175dip" />
-
+        
         
         
          <TableLayout android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:layout_gravity="bottom"
                 android:layout_marginTop="10dip">
                 <TableRow>
                         <TextView android:text="X" android:layout_width="50dip"
