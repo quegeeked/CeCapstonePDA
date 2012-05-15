@@ -11,6 +11,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+
 import android.widget.Button;
 
 public class CeCapstonePDAActivity extends MapActivity {
@@ -22,7 +23,7 @@ public class CeCapstonePDAActivity extends MapActivity {
     private Button camera;
     private Button depth;
     private Button mapView2;
-  
+    private JoystickView JoystickView;
 
     /** Called when the activity is first created. */
     @Override

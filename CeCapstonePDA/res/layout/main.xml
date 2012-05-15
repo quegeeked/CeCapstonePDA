@@ -1,42 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relative"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent" >
-
-    <LinearLayout
-        android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:orientation="vertical" >
+    android:layout_height="match_parent"
+     >
 	
         
         <Button
             android:id="@+id/Camera"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#003F87"
             android:text="@string/Camera"
-            android:textStyle="italic" />
+            android:textStyle="italic" 
+            />
 
         <Button
             android:id="@+id/Depth"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#4A7023"
             android:text="@string/Depth"
             android:textStyle="italic" />
-
-        
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-    </LinearLayout>
 	    
 	    
 	    
@@ -50,4 +35,4 @@
         android:clickable="true" >
     </com.google.android.maps.MapView>
 
-</RelativeLayout>
+</LinearLayout>
