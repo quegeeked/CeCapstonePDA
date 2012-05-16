@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relative"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-     >
-	
-        
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
         <Button
             android:id="@+id/Camera"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#003F87"
             android:text="@string/Camera"
-            android:textStyle="italic" 
-            />
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/Depth"
@@ -22,23 +24,26 @@
             android:background="#4A7023"
             android:text="@string/Depth"
             android:textStyle="italic" />
-	
-	    
-        <com.cecapstone.pda.DualJoystickView
-                android:id="@+id/dualjoystickView" android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dip" android:layout_width="fill_parent"
-                android:layout_height="175dip" />
+    </LinearLayout>
 
-       
-      
+    <com.cecapstone.pda.DualJoystickView
+        android:id="@+id/dualjoystickView"
+        android:layout_width="277dp"
+        android:layout_height="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp" />
+
     <com.google.android.maps.MapView
         android:id="@+id/mapview"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
         android:apiKey="0khk0qKSG4V6BwZpLgbgeXh8pKKP073H_YleCBQ"
+        android:background="@layout/main"
         android:clickable="true" >
     </com.google.android.maps.MapView>
 
-</LinearLayout>
+</RelativeLayout>

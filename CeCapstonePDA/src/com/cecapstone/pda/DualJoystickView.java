@@ -9,12 +9,11 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class DualJoystickView extends View {
+public class DualJoystickView extends LinearLayout {
     @SuppressWarnings("unused")
     private static final String TAG = DualJoystickView.class.getSimpleName();
     
@@ -41,7 +40,7 @@ public class DualJoystickView extends View {
     }
 
     private void initDualJoystickView() {
-            startAnimation(LinearLayout.HORIZONTAL);
+            setOrientation(LinearLayout.HORIZONTAL);
             
             if ( D ) {
                     dbgPaint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -53,12 +52,6 @@ public class DualJoystickView extends View {
             pad = new View(getContext());
     }
     
-    private void startAnimation(int horizontal)
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
@@ -87,18 +80,6 @@ public class DualJoystickView extends View {
             addView(stickR);
     }
     
-    private void addView(View pad2)
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-    private void removeView(View pad2)
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
             super.onLayout(changed, l, t, r, b);

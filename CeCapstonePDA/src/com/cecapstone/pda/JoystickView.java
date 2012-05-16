@@ -524,4 +524,5 @@ public class JoystickView extends View {
     public void setTouchOffset(int x, int y) {
             offsetX = x;
             offsetY = y;
-    }}
+    }
+}
