@@ -23,8 +23,8 @@
             android:text="@string/Depth"
             android:textStyle="italic" />
 	
-	    
-	    
+	
+
     <com.google.android.maps.MapView
         android:id="@+id/mapview"
         android:layout_width="wrap_content"
@@ -34,5 +34,5 @@
         android:apiKey="0khk0qKSG4V6BwZpLgbgeXh8pKKP073H_YleCBQ"
         android:clickable="true" >
     </com.google.android.maps.MapView>
-
+      
 </LinearLayout>
