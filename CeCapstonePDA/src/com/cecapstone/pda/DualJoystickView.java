@@ -44,7 +44,7 @@ public class DualJoystickView extends LinearLayout {
             
             if ( D ) {
                     dbgPaint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
-                    dbgPaint1.setColor(Color.CYAN);
+                    dbgPaint1.setColor(Color.MAGENTA);
                     dbgPaint1.setStrokeWidth(1);
                     dbgPaint1.setStyle(Paint.Style.STROKE);
             }
